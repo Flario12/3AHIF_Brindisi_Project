@@ -1,7 +1,8 @@
 body {
     margin: 0;
     overflow: hidden;
-    background: black;
+    background: rgba(0, 0, 0, 0.326);
+    animation: floorChange 3s infinite;
 }
 
 #score {
@@ -15,20 +16,27 @@ body {
     z-index: 1000;
 }
 
+#timer {
+    position: fixed;
+    color: white;
+    top: 60px;
+    right: 20px;
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    z-index: 1000;
+}
+
 .garbage {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    max-width: 150px;
+    max-height: 150px;
     cursor: pointer;
     user-select: none;
 }
 
-#timer {
-    position: fixed;
-    top: 60px;
-    right: 20px;
-    font-size: 28px;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
-    color: black;
+@keyframes floorChange {
+    0% { background-color: rgba(0, 0, 0, 0.226); }
+    50% { background-color: rgba(0, 0, 0, 0.326); }
+    100% { background-color: rgba(0, 0, 0, 0.226); }
 }
