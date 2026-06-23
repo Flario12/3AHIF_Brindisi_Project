@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: black;
+}
+
+#score {
+    position: fixed;
+    color: white;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.garbage {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#timer {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    font-size: 28px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+}
